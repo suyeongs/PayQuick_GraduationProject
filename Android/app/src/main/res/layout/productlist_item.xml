@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/p_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/p_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/handon_300g"
+            android:includeFontPadding="false"
+            android:text="TITLE"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/handon_300g"
+            android:includeFontPadding="false"
+            android:text="content"
+            android:textSize="16sp"
+            android:textColor="#2E2E2E" />
+
+        <TextView
+            android:id="@+id/p_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/handon_300g"
+            android:includeFontPadding="false"
+            android:text="content"
+            android:textSize="16sp"
+            android:textColor="#2E2E2E" />
+
+        <TextView
+            android:id="@+id/p_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/handon_300g"
+            android:includeFontPadding="false"
+            android:text="content"
+            android:textSize="16sp"
+            android:textColor="#2E2E2E" />
+
+    </LinearLayout>
+
+</LinearLayout>

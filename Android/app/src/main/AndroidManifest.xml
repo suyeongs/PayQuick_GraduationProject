@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.payquick">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_pq"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_pq_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BarcodeActivity" />
+        <activity android:name=".ScanPayActivity" />
+        <activity android:name=".ScanStockActivity" />
+        <activity android:name=".AddShoplistActivity" />
+        <activity android:name=".ShoplistActivity" />
+        <activity android:name=".SearchStockActivity" />
+        <activity android:name=".PaymentCartActivity" />
+        <activity android:name=".PaymentImmedActivity" />
+        <activity android:name=".SimplePayImmedActivity" />
+        <activity android:name=".SimplePayCartActivity" />
+        <activity android:name=".MyOrdersActivity" />
+        <activity android:name=".MyOrdersDetailActivity" />
+        <activity android:name=".MyAccountActivity" />
+        <activity android:name=".MyMembershipActivity" />
+        <activity android:name=".EditActivity" />
+    </application>
+
+</manifest>

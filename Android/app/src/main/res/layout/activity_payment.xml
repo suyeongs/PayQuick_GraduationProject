@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/handon_300g"
+            android:text="결제하기"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/pay_text"
+        android:layout_below="@+id/toolbar_light"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:text="총 금액" />
+
+    <TextView
+        android:id="@+id/pay_price"
+        android:layout_below="@+id/toolbar_light"
+        android:layout_toRightOf="@+id/pay_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="right"
+        android:text="" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/pay_price"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/method_pay"
+        android:layout_below="@+id/line"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:text="결제 방법" />
+
+    <Spinner
+        android:id="@+id/method_spinner"
+        android:layout_below="@+id/method_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:entries="@array/method" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/method_spinner"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/handon_300g"
+        android:text="결제하기"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+</RelativeLayout>

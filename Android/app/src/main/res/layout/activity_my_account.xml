@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <!--
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    app:theme="@style/ThemeOverlay.AppCompat"
+    -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/handon_300g"
+            android:text="회원정보"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/register_pw"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="textPassword"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/register_id"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_pw"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/handon_300g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:inputType="phone"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/handon_300g"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:focusableInTouchMode="false" />
+    <!--android:gravity="right"-->
+
+    <TextView
+        android:layout_above="@+id/register_id"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Email" />
+
+    <TextView
+        android:layout_above="@+id/register_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Password" />
+
+    <TextView
+        android:layout_above="@+id/register_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Phone" />
+
+    <TextView
+        android:layout_above="@+id/register_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handon_300g"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Name" />
+
+    <ImageView
+        android:id="@+id/logo_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_pw"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_marginHorizontal="50dp"
+        android:paddingBottom="100dp"
+        android:src="@drawable/white_logo_pic" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_below="@+id/register_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handon_300g"
+        android:text="수정하기"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"/>
+</RelativeLayout>

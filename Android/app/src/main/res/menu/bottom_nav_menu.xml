@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 하단 네비게이션 메뉴 아이콘 밑 명칭 -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_pic"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_shop_pic"
+        android:title="@string/title_shop" />
+
+    <!--
+    <item
+        android:id="@+id/navigation_counter"
+        android:icon="@drawable/ic_counter_pic"
+        android:title="@string/title_counter" />
+
+    <item
+        android:id="@+id/navigation_stock"
+        android:icon="@drawable/ic_stock_pic"
+        android:title="@string/title_stock" />
+    -->
+
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/ic_mypage_pic"
+        android:title="@string/title_mypage" />
+</menu>
