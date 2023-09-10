@@ -1,5 +1,7 @@
 # PayQuick_GraduationProject
 졸업프로젝트 PayQuick 앱
+
+[웹 : https://github.com/syeonee/PayQuick_Web.git]
 <br>
 <br>
 
